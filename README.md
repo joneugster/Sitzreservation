@@ -2,6 +2,11 @@
 
 A simple seat reservation tool sending confirmation emails with QR-code tickets. The live version is at [tickets.tvmettmenstetten.ch](https://tickets.tvmettmenstetten.ch). A lot of this has bben hardcoded and wasn't intended to be transferred to a different site, but it shouldn't be hard to modify.
 
+### Contribution
+Please feel free to use and modify this code to your liking (That's what the [MIT licence](LICENSE) says). If you have time to make some improvement to the code, contributions are very welcome! 
+
+And if you need help getting stuff running, I'm always happy to do so :)
+
 ## Setup
 Modifications needed to get this running (Most of them are marked with a `TODO` in the code):
 
