@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>${title}</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/frontend.css" rel="stylesheet" type="text/css">
+    <link href="css/room.css" rel="stylesheet" type="text/css">
+    <link href="css/bill.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu" rel="stylesheet">
+    <script src="js/validateForm.js" type="text/javascript"></script>
+    <script src="js/showhide.js" type="text/javascript"></script>
+    <script src="js/printDiv.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav id="top_nav">
+          <a onclick="return confirm('${confirm_lose_data}');" href="${return_site}" title="${return_caption}">
+            <img src="${return_image}" alt="{return_image_alt}">
+          </a>
+          
+          <ul>
+            <li><a onclick="return confirm('${confirm_lose_data}');" href="index.cgi" title="${caption_restart}">${site_title}</a></li>
+            ${_topnav_current_day}
+          </ul>
+        </nav>
+        <!--
+        <div id="under_construction">
+          <p>${warning_under_construction}</p>
+        </div>
+        -->
+      </header>
+      <section id="content">
+<!--         <noscript><p class="warning">{warning_no_js}</p></noscript> -->
+        <form name="MyForm" method="post" class="myForm" accept-charset="UTF-8">
+        ${_day_selection}
+        
+        ${_status}
+        
+        ${_bill}
+                
+        <aside id="pricelist">${_pricelist}</aside>
+        <aside id="menulist">${_menulist}</aside>
+        
+        <div id="wrapper_reservation" style="display:block;">
+          <aside id="legend">${_legend}</aside>
+          
+          ${_room}
+          
+        </div>
+
+        ${_form}
+
+        ${_general_info}
+
+                
+        </form>
+      </section>
+      <div class="placeholder"></div>
+    </main>
+    
+    <footer>
+      <ul>
+        <li class="contact">${footer}</li>
+        <li class="credits">${credits}</li>
+      </ul>
+    </footer>
+
+  </body>
+</html>

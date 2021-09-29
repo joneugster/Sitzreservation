@@ -1,0 +1,514 @@
+year: '2019'
+welcome: "Willkommen auf der Reservationsseite für's Turnerchränzli Mättmi 2019!"
+
+days:
+    SA1: 'Samstag 9. Nov.'
+    FR2: 'Freitag 15. Nov.'
+    SA2: 'Samstag 16. Nov.'
+
+times:
+    SA1: 
+        time_open: '18:00'
+        time_start: '20:00'
+        time_last_menu: '19:30'
+    FR2: 
+        time_open: '18:30'
+        time_start: '20:00'
+        time_last_menu: '19:30'
+    SA2: 
+        time_open: '18:00'
+        time_start: '20:00'
+        time_last_menu: '19:30'
+
+menu:
+    SA1:
+        - 'Gemischter Salat,'
+        - 'Hackbraten mit'
+        - 'Kartoffelstock,'
+        - 'Erbsli und Rüebli'
+    SA2:
+        - 'Gemischter Salat,'
+        - 'Rindsgulasch mit'
+        - 'Kartoffelstock,'
+        - 'Erbsli und Rüebli'
+    FR2:
+        - 'Gemischter Salat,'
+        - 'Riz Casimir'
+        - 'mit Schweizer Poulet'
+
+prices: [15, 23]
+prices_text: ['pro Sitz', 'pro Menü']
+currency: 'CHF'
+
+
+
+# ------
+return_site: 'https://www.tvmettmenstetten.ch/index.php/anlaesse/chraenzli/'
+return_caption: 'Zurück zur TVM-Homepage'
+return_image: 'https://www.tvmettmenstetten.ch/images/logos/tvm/TVM_250px.png'
+return_image_alt: 'Turnverein Mettmenstetten'
+
+confirm_lose_data: 'Wenn Sie fortfahren, verlieren Sie alle eingefüllten Daten!'
+site_title: 'Sitzreservation Turnerchränzli Mättmi 2019'
+
+caption_restart: 'Zurück zum Anfang'
+
+title_chosen_day: 'Ausgewählt'
+title: 'TVM - Sitzreservation'
+
+
+IE_might_not_work: >-
+    Falls Sie Probleme mit der Seite haben, versuchen Sie zuerst einen
+    anderen Browser zu benützen. Internet Explorer ist veraltet und instabil.
+    Sie können z.B. "Opera" oder "Google Chrome" ausprobieren. 
+
+choose_day: 'Wählen Sie ein Datum aus:'
+choose_another_day: 'Sie können das Datum noch ändern:'
+
+caption_price_list: 'Preise'
+
+# Uses the keys from `times`.
+day_description: |-
+    Ort: Turnhalle Wygarten Mettmenstetten
+    Vorstellungsbeginn: {time_start} Uhr
+    Türöffnung: {time_open} Uhr
+    Menüs werden bis {time_last_menu} Uhr serviert.
+    
+warning_under_construction: |-
+    This site is under construction.
+    All reservation requests will be deleted and
+    provided data eliminated. Feel free to play around.
+    
+warning_format_error_outlook: |-
+    Achtung! Diverse Mailclients, wie z.B. Outlook, haben auch heutzutage noch
+    Fehler in der Implementierung von HTML-Nachrichten, was zu schlechtem
+    Layout und abgeschnittenen QR-Codes führen kann. Drucken Sie die Tickets
+    doch unten mit "Rechnung anzeigen" aus.
+ 
+warning_no_js: ''
+confirm_day_change: 'If you change the date you will lose selected seats.'
+
+welcome_info: >-
+    Sie können unten Sitze für die drei Abendvorstellungen auswählen 
+    und diese gleich reservieren. Die Rechnung erhalten Sie dann ganz 
+    einfach per Mail und können diese dann via Banküberweisung 
+    im voraus begleichen.
+    
+    
+    Beachten Sie dass die Reservation zuerst nur für Personen geöffnet ist,
+    die auch ein Menü bestellen, darauf wird es auch noch möglich sein,
+    Sitzplätze ohne Menü zu reservieren.
+    
+    
+    Zusätzlich gibt es auch an der Abendkasse noch freie Sitze 
+    (z.B. am Rand ohne Tisch).
+
+    
+    Ab 1. Oktober sind Reservationen ohne Menü möglich, der Vorverkauf
+    schliesst donnerstags vor der jeweiligen Vorstellung.
+    
+    
+    Für die Sonntagsvorstellung gibt es keinen Vorverkauf.
+
+warning_reservation_not_open: 'Die Reservation für diese Vorstellung öffnet am ${time_open}.'
+warning_reservation_closed: 'Die Reservation für diese Vorstellung ist geschlossen. Kommen Sie doch an der Abendkasse vorbei.'
+
+error_lockfile: >-
+    FEHLGESCHLAGEN: Die Datenbank ist zurzeit schreibgeschützt!
+    (Weil jemand anderes gleichzeitig eine Reservation macht)
+    Versuchen Sie es etwas später nochmals.
+
+validation_required_fields: 'Füllen Sie das Feld ${missing_field} aus!'
+validation_no_seats: 'Sie haben keinen Sitz ausgewählt!'
+validation_no_seats_or_bill: >-
+    Es muss mindestens ein Sitz ausgewählt sein oder eine Rechnungsnummer
+    angegeben werden!
+validation_no_menus: 'Geben Sie eine Anzahl Menüs an!'
+validation_no_menu_conf: 'Bestätigen Sie die Menüs.'
+validation_no_confirmation: 'Bestätigen sie die Bedingungen.'
+validation_too_many_menus: >-
+    Sie können maximal ein Menü pro Sitz bestellen! Anzahl wurde
+    automatisch reduziert.
+
+footer: 'Bei Problemen wenden Sie sich bitte an Jon ([i]webmaster@tvmettmenstetten.ch[/i]) oder an Daniel Rissi: +41 (0)79 253 76 23'
+credits: 'Jon Eugster, 2019'
+
+show_bill: 'Rechnung anzeigen'
+print_bill: 'Rechnung drucken'
+title_billnr: 'Rechnungsnr.'
+
+form_legend: 'Weitere Angaben'
+form_title_mr: 'Herr'
+form_title_ms: 'Frau'
+form_title: 'Anrede'
+form_firstname: 'Vorname'
+form_lastname: 'Nachname'
+form_street: 'Strasse'
+form_streetnr: 'Hausnummer'
+form_postcode: 'Postleitzahl'
+form_city: 'Ort'
+form_address_compl: 'Adresszusatz'
+form_email: 'E-Mail'
+form_email_conf: 'E-Mail bestätigen'
+form_phone: 'Telefon'
+form_comment: 'Anmerkung'
+form_required_fields: 'Pflichtfelder'
+form_nr_menus: 'Anzahl Menüs'
+form_menu_conf: 'Alle Sitze mit Menü reservieren.'
+form_conditions: >-
+    Ich bestätige, zur Kenntnis genommen zu haben, dass die Sitze wieder
+    freigegeben werden können, falls die Rechnung nicht innert
+    [b]10 Tagen[/b] beglichen wird.
+form_force_menu: >-
+    Bis ${time_force_menu} sind Reservationen nur mit Menü möglich!
+
+button_submit: 'Sitze reservieren'
+button_show_seats: 'Freie Sitze anzeigen'
+
+reservation_successful: 'Die Reservation war erfolgreich!'
+reservation_unsuccessful: 'Die Reservation hat nicht geklappt, versuche es später nochmals!'
+info_your_address: 'Ihre angegebene Adresse:'
+
+info_menu_only: 'Reservationen ohne Menüs können ab dem ${time_force_menu} getätigt werden.'
+info_menu_open: 'Menüs können noch bis am ${time_menu_close} bestellt werden.'
+info_menu_closed: 'Menüs sind vor Ort erhältlich.'
+info_bill_sent: |-
+    Sie erhalten die Rechnung in Kürze per E-Mail an ${email}.
+    (Schauen Sie auch im SPAM-Ordner nach)
+
+# Use ${info_about_time} for one of the 3 above.
+general_info: |-
+    ${info_about_menu}
+    Sie erhalten die Rechnung per Mail.
+    Zahlbar innert 10 Tagen. Ansonsten werden die Sitze wieder freigegeben.
+    Die Reservation wird mit der Zahlung definitiv.
+    Ihre Daten werden nur für die Reservation gebraucht, sie werden in keiner Weise weiterverwendet.
+
+warning_no_mail: >-
+    Die Rechnung konnte nicht per Mail versandt werden!
+    [b]Drucken Sie sich die Rechnung eifach direkt aus[/b]
+    (Knopf unten) oder kontaktieren Sie uns.
+
+might_take_a_while: 'Haben Sie Geduld, das kann einige Sekunden dauern! Drücken Sie NICHT auf "Reload Page".'
+
+mail_sbj_bill: "Sitzreservation für's Chränzli vom ${day} - Rechnungsnr. ${bill_nr}"
+
+no_menu: '(ohne Menü)'
+one_menu: '+ ${n} Menü'
+more_menu: '+ ${n} Menüs'
+
+
+mail_word_single: 'Einzel'
+mail_word_all: 'Alle Sitze'   
+mail_single_with_menu: 'mit Menü'
+
+
+word_copy: 'KOPIE'
+
+caption_seat_legend: 'Legende'
+seat_legend_free:  'Frei'
+seat_legend_paid:  'Bezahlt'
+seat_legend_occupied:  'Reserviert'
+seat_legend_yours:  'Von Ihnen reserviert'
+
+mail_lockfile: ''
+mail_subj_lockfile: ''
+
+caption_menu_list: 'Menü'
+
+info_choose_seat: 'Wählen Sie die gewünschten Sitze aus:'
+info_no_gaps:   '(Bitte keine Lücken lassen)'
+
+warning_occupied_seat: 'Folgende Sitze sind nicht verfügbar:'
+warning_emails_dont_match: 'Emailadresse und Bestätigung stimmen nicht überein.'
+
+# This is an exception and is already HTML formatted
+mail_wrapper: |-
+    <!doctype html>
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" dir="ltr">
+        <head>
+            <title>Mail Sitzreservation</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta http-equiv="x-ua-compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+            <style type="text/css">
+                body{
+                    font:14px/20px  'Open Sans', 'Verdana', sans-serif;
+                    margin:0;
+                    margin-left: 1in;
+                    padding:75px 0 0 0;
+                    text-align: left;
+                    -webkit-text-size-adjust:none;       
+                } 
+                .ticket {
+                    border: 3px solid #ddd;
+                    border-radius: 30px;
+                    overflow: hidden;
+                    width: 600px;
+                    margin-bottom: 30px;
+                    padding: 5px;
+                    position: relative;
+                    min-height: 150pt;
+                }
+
+                .ticket img {
+                    float: left;
+                    width: 200px;
+                    height: 200px;
+                }
+
+                .ticket_text {
+                    text-align:left;
+                    position: absolute;
+                    left: 220px;
+                    height: 95%;
+                }
+
+                .ticket_text p {
+                    margin: 15px 0px;
+                }
+
+                .ticket_text p.bottom {
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                .ticket_all_seats {
+                    color: #8d2137;
+                    border-color: #8d2137;
+                    border-width: 4px;
+                }            </style>
+        </head>
+        <body>
+            ${content}
+        </body>
+    </html>
+
+mail_msg_bill: |-
+            <p>Sehr geehrte${r} ${title} ${name},</p>
+            <p>Herzlichen Dank f&uuml;r Ihre Sitzreservation f&uuml;r das Turnerchr&auml;nzli ${year}. Sie haben folgende${n} Sitz${e} reserviert:</p>
+            <p><span style="color: #008000;">${seats}<span style="color: #808080;">, ${menus}</span></span><br />(${day} ${year})</p>
+            <table><tbody>
+                <tr>
+                    <th style="text-align: left;" colspan="3">Rechnung</th>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">${costs_seats} CHF</td>
+                    <td>&nbsp;&ndash;&nbsp;</td>
+                    <td>F&uuml;r ${nr_seats} reservierte${n} Sitz${e} &agrave; CHF ${price_seat}.-</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">${costs_menu} CHF</td>
+                    <td>&nbsp;&ndash;&nbsp;</td>
+                    <td>F&uuml;r ${nr_menus} Men&uuml;${s} &agrave; CHF ${price_menu}.-</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><hr /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><span style="color: #008000;">${costs_total} CHF</span></td>
+                    <td><span style="color: #008000;">&nbsp;&ndash;&nbsp;</span></td>
+                    <td><span style="color: #008000;">Totaler Rechnungsbetrag</span></td>
+                </tr>
+            </tbody></table>
+            <p>Wir bitten Sie, diesen Betrag innert <strong>10 Tagen</strong> an das untenstehende Bankkonto zu &uuml;berweisen. Andernfalls wird die Reservation &ndash; nach R&uuml;cksprache &ndash; gel&ouml;scht.</p>
+            <p><strong>Als Mitteilung angeben: Nr. ${bill_nr}</strong></p>
+            <table><tbody>
+                <tr>
+                    <td colspan="2"><strong>Bankverbinung</strong></td>
+                </tr>
+                <tr>
+                    <td>Einzahlung f&uuml;r:</td>
+                    <td>Z&uuml;rcher Kantonalbank, 8010 Z&uuml;rich</td>
+                </tr>
+                <tr>
+                    <td>IBAN:</td>
+                    <td>TODO</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Turnverein Mettmenstetten</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>8932 Mettmenstetten</td>
+                </tr>
+                <tr>
+                    <td>Mitteilung:</td>
+                    <td>Nr. ${bill_nr}</td>
+                </tr>
+            </tbody></table>
+            <p>Wenn etwas nicht stimmen sollte oder Sie &Auml;nderungen haben, kontaktieren Sie bitte Daniel Rissi. Wir w&uuml;nschen Ihnen bereits jetzt gute Unterhaltung!</p>
+            <table cellpadding="0" cellspacing="0" border="0" class="ticket_wrapper">
+                <tr>
+                    <td>
+                        <h4>Tickets</h4>
+                        <p>Drucken Sie unten stehende Tickets aus. Wenn Sie alle zusammen kommen,
+                            k&ouml;nnen Sie nur das erste ausdrucken, ansonsten bitte die
+                            Einzelnen verwenden. Nat&uuml;rlich k&ouml;nnen Sie auch kommen ohne
+                            die Tickets auszudrucken.</p>
+                        <center>
+                            ${tickets}
+                        </center>
+                    </td>
+                </tr>
+            </table>
+
+            <p>&nbsp;</p>
+            <p>Mit sportlichen Gr&uuml;ssen,<br />TV Mettmenstetten</p>
+            <p>&nbsp;</p>
+            <hr />
+            <p>c/o Daniel Rissi<br />Giessenstrasse 13<br />8910 Affoltern am Albis<br />Tel. +41 (0)79 253 76 23<br /><a href="mailto:tickets@tvmettmenstetten.ch">tickets@tvmettmenstetten.ch</a><br /><a href="http://www.tvmettmenstetten.ch">www.tvmettmenstetten.ch</a></p>
+
+#mail_ticket_template: |-
+#                    <div class="ticket ${css_class}">
+#                        <img src="${qr_code}" style="margin: 0; border: 0; padding: 0; display: block; width=200px; height=200px;" width="200" height="200" />
+#                        <div class="ticket_text">
+#                            <p><em>Chr&auml;nzli TV M&auml;ttmi ${year}</em></p>
+#                            <h3>${quantifier}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${menu}</h3>
+#                            <h2><strong>${seats}</strong></h2>
+#                            <p class="bottom">${event}</p>
+#                        </div>
+#                    </div>
+
+
+mail_ticket_template: |-
+
+    <table cellpadding="0" cellspacing="0" border="0" class="ticket ${css_class}">
+      <tr>
+        <td>
+            <img src="${qr_code}" style="margin: 0; border: 0; padding: 0; display: block; width=200px; height=200px;" width="200" height="200" />
+        </td>
+        <td class="ticket_text">
+            <p><em>Chr&auml;nzli TV M&auml;ttmi ${year}</em></p>
+            <h3>${quantifier}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${menu}</h3>
+            <h2><strong>${seats}</strong></h2>
+            <p class="bottom">${event}</p>
+        </td>
+      </tr>
+    </table>
+
+
+mail_msg_bill_reminder: |-
+    <p>Sehr geehrte${r} ${title} ${name},</p>
+    <p>Sicher ist es Ihrer Aufmerksamkeit entgangen, den f&auml;lligen Betrag f&uuml;r das Turnerchr&auml;nzli ${year} zu begleichen. Wir freuen uns auf eine rasche Zahlung der offenen Rechnungen.</p>
+    <p>Falls Sie dies in den letzten paar Tagen gemacht haben, hat dieses Email vermutlich die Zahlung gekreuzt und Sie k&ouml;nnen diese Nachricht als gegenstandslos betrachten.</p>
+    <p>&nbsp;</p>
+    <p>Sie haben folgende${n} Sitz${e} reserviert:</p>
+    <p><span style="color: #008000;">${seats}<span style="color: #808080;">, ${menus}</span></span><br />(${day} ${year})</p>
+    <table>
+    <tbody>
+    <tr>
+    <th style="text-align: left;" colspan="3">Rechnung</th>
+    </tr>
+    <tr>
+    <td style="text-align: right;">${costs_seats} CHF</td>
+    <td>&nbsp;&ndash;&nbsp;</td>
+    <td>F&uuml;r ${nr_seats} reservierte${n} Sitz${e} &agrave; CHF ${price_seat}.-</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">${costs_menu} CHF</td>
+    <td>&nbsp;&ndash;&nbsp;</td>
+    <td>F&uuml;r ${nr_menus} Men&uuml;${s} &agrave; CHF ${price_menu}.-</td>
+    </tr>
+    <tr>
+    <td colspan="3"><hr /></td>
+    </tr>
+    <tr>
+    <td style="text-align: right;"><span style="color: #008000;">${costs_total} CHF</span></td>
+    <td><span style="color: #008000;">&nbsp;&ndash;&nbsp;</span></td>
+    <td><span style="color: #008000;">Totaler Rechnungsbetrag</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>Als Mitteilung angeben: Nr. ${bill_nr}</strong></p>
+    <table>
+    <tbody>
+    <tr>
+    <td colspan="2"><strong>Bankverbinung</strong></td>
+    </tr>
+    <tr>
+    <td>Einzahlung f&uuml;r:</td>
+    <td>Z&uuml;rcher Kantonalbank, 8010 Z&uuml;rich</td>
+    </tr>
+    <tr>
+    <td>IBAN:</td>
+    <td>TODO</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>Turnverein Mettmenstetten</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>8932 Mettmenstetten</td>
+    </tr>
+    <tr>
+    <td>Mitteilung:</td>
+    <td>Nr. ${bill_nr}</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Wenn etwas nicht stimmen sollte oder Sie &Auml;nderungen haben, kontaktieren Sie bitte Daniel Rissi. Wir w&uuml;nschen Ihnen bereits jetzt gute Unterhaltung!</p>
+    <p>&Uuml;brigens, wenn Sie dieses Email mit dem folgenden QR-Code ausdrucken, kommen sie noch unkompizierter zur Vorstellung.<br /> ${qr_code}</p>
+    <p>&nbsp;</p>
+    <p>Mit sportlichen Gr&uuml;ssen,<br />TV Mettmenstetten</p>
+    <p>&nbsp;</p>
+    <hr />
+    <p>c/o Daniel Rissi<br />Giessenstrasse 13<br />8910 Affoltern am Albis<br />Tel. +41 (0)79 253 76 23<br /><a href="mailto:tickets@tvmettmenstetten.ch">tickets@tvmettmenstetten.ch</a><br /><a href="http://www.tvmettmenstetten.ch">www.tvmettmenstetten.ch</a><br /><br /></p>
+
+ 
+op_show_reservation: 'Reservationen anzeigen'
+op_title_seats: 'Sitze'
+op_show_contact: 'Kontaktformular anzeigen'
+
+op_popup_bill: 'Rechn.'
+op_popup_menu: 'Menü'
+op_popup_email: 'E'
+op_popup_phone: 'T'
+op_popup_res_date: 'Res. Datum'
+op_popup_bill_date: 'Rech. Datum'
+op_popup_paid_date: 'Zahl. Datum'
+
+op_legend_with_menu: 'Mit Menü'
+op_legend_overdue: 'Zahlung überfällig'
+op_download_data: 'Daten als CSV herunterladen'
+op_form_sendmail: 'Dem Kunden die Rechnung per Mail schicken.'
+
+op_action: 'Aktion'
+op_action_paid: 'bezahlt'
+op_action_free: 'freigeben'
+op_action_claim: 'reservieren'
+op_action_cancel_payment: 'Zahlung stornieren'
+op_action_bill_date: 'Rechnung neu schicken'
+op_action_button: 'Aktion ausführen'
+op_form_bill_nr: 'Rechn. Nr. eingeben oder Sitze oben auswählen'
+
+op_found_number_seats: 'Gefundene Sitze'
+
+op_warning_cant_free: >-
+    FEHLGESCHLAGEN: Unter den ausgewählten Sitzen hat es solche,
+    die schon bezahlt wurden!
+    Diese können nicht gelöscht werden.
+    (Storniere zuerst die Bezahlung)
+op_warning_already_paid: 'Einige Sitze wurden bereits bezahlt'
+op_warning_not_claimed: 'Einige Sitze sind noch gar nicht reserviert'
+op_warning_not_paid: 'Einige Sitze wurden noch nicht bezahlt: '
+
+stat_overdue: 'Überfällig'
+stat_overdue_bill: 'Überfällige Rechnungen'
+stat_free_seats: 'Freie Plätze'
+stat_menu: 'Menüs'
+stat_claimed_seats: 'Reservierte Plätze'
+stat_paid: 'Bezahlt'
+stat_of: 'von'
+stat_statistics: 'Statistik'
+
+
+qr_title: 'TVM 2019'
+qr_nr: 'Nr.'
+qr_seat: 'Seat'
+qr_menu: 'Menu'
+qr_checksum: 'Checksum'

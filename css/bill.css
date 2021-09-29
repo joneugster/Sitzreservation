@@ -1,0 +1,79 @@
+#bill{
+    border-color: #bbbbbb;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* 
+#bill img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+ */
+
+#bill p {
+    max-width: 600px;
+    margin: 15px 0px;
+}
+
+#bill.to_print img{
+    right: unset;
+    left: 605px;
+}
+
+.ticket {
+    border: 3px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 600px;
+    margin-bottom: 30px;
+    padding: 5px;
+    position: relative;
+    min-height: 150pt;
+}
+
+.ticket img {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.ticket_text {
+    text-align:left;
+    position: absolute;
+    left: 220px;
+    height: 95%;
+}
+
+.ticket_text p, .ticket_text h2, .ticket_text h3 {
+}
+
+.ticket_text p.bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.ticket_all_seats {
+    color: #8d2137;
+    border-color: #8d2137;
+    border-width: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

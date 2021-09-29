@@ -1,0 +1,73 @@
+files:
+    SA1: 'data/data_SA1.csv'
+    FR2: 'data/data_FR2.csv'
+    SA2: 'data/data_SA2.csv'
+
+time_open:
+    SA1: '04.09.2019, 03:00'
+    FR2: '04.09.2019, 03:00'
+    SA2: '04.09.2019, 03:00'
+
+time_close:
+    SA1: '08.11.2019, 03:00'
+    FR2: '14.11.2019, 03:00'
+    SA2: '14.11.2019, 03:00'
+
+time_force_menu:
+    SA1: '01.10.2019, 03:00'
+    FR2: '01.10.2019, 03:00'
+    SA2: '01.10.2019, 03:00'
+
+time_menu_close:   
+    SA1: '02.11.2019, 03:00'
+    FR2: '09.11.2019, 03:00'
+    SA2: '09.11.2019, 03:00'
+
+csv_columns: 
+    - Sitz
+    - Reserviert
+    - Bezahlt
+    - Anzahl_Menus
+    - Anrede
+    - Name
+    - Strasse
+    - Ort
+    - Adresszusatz_1
+    - Adresszusatz_2
+    - Email
+    - Telefon
+    - Res-Datum
+    - Bez-Datum
+    - Rechnungs-Datum
+    - Rechnungs-Nummer
+    - Anmerkung
+    
+mail_admin:
+    - admin@tvmettmenstetten.ch
+
+mail_op:
+    - tickets@tvmettmenstetten.ch       
+            
+# Every entry will create a column of tables
+# The first number says in which row the first table is
+# The second number says how many tables in that row
+# (Tables can be placed afterwards in `room.css`)
+seats_per_table: 6
+tables:
+    A:
+        - 0
+        - 11
+    B:
+        - 0
+        - 11
+    C:
+        - 0
+        - 10
+    D:
+        - 0
+        - 10
+    E:
+        - 1
+        - 8         
+
+              

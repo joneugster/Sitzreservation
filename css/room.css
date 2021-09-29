@@ -1,0 +1,146 @@
+#room {
+    position: relative;
+    height: 1316px;}
+#room img, #room input, #room input+label, #room .seatname{
+    position: absolute;}
+#entry {
+    top: 80px;
+    left: 773px;}
+#cuisine {
+    top: 930px;}
+.letter {
+    top: 100px;}
+
+    
+.tablerow_A {
+    left: 687px; }
+.tablerow_B {
+    left: 523px; }
+.tablerow_C {
+    left: 359px; }
+.tablerow_D {
+    left: 195px; }
+.tablerow_E {
+    left: 31px; }
+
+
+.tablenr_0 {
+    top: 160px;}
+.tablenr_1 {
+    top: 256px;}
+.tablenr_2 {
+    top: 352px;}
+.tablenr_3 {
+    top: 448px;}
+.tablenr_4 {
+    top: 544px;}
+.tablenr_5 {
+    top: 640px;}
+.tablenr_6 {
+    top: 736px;}
+.tablenr_7 {
+    top: 832px;}
+.tablenr_8 {
+    top: 1024px;}
+.tablenr_9 {
+    top: 1120px;}
+.tablenr_10 {
+    top: 1216px;}
+
+   
+/* Display image instead of Ceckbox */ 
+.seat {
+    display:none;}
+.seat + label {
+   background: url('../img/seats/seat_white.png') 0 0px no-repeat;
+   height: 32px;
+   width: 32px;
+   display:inline-block;
+   padding: 0 0 0 0px;}
+.seat.paid + label {
+   background: url('../img/seats/seat_red.png') 0 0px no-repeat;}
+.seat.claimed + label {
+   background: url('../img/seats/seat_yellow.png') 0 0px no-repeat;}
+.seat.current + label {
+   background: url('../img/seats/seat_green.png') 0 0px no-repeat;}
+
+.seat:checked + label{
+    background-color: #0088cc;}
+.seat + label:hover{
+    background-color: #88CC00;}
+
+.seat[disabled] +label:hover{
+    background-color: unset
+}
+
+/* Seats relative to the table */
+label.seat_0 {
+    margin-top: -2px;
+    margin-left: 50px;}
+label.seat_1 {
+    margin-top: -2px;
+    margin-left: -32px;
+    transform: rotate(180deg);}
+label.seat_2 {
+    margin-top: 30px;
+    margin-left: 50px;}
+label.seat_3 {
+    margin-top: 30px;
+    margin-left: -32px;
+    transform: rotate(180deg);}
+label.seat_4 {
+    margin-top: 62px;
+    margin-left: 50px;}
+label.seat_5 {
+    margin-top: 62px;
+    margin-left: -32px;
+    transform: rotate(180deg);}
+
+/* Seat names */
+.seatname {
+    position: absolute;
+    font-size: 7px;
+    padding: 0px 1px 1px 1px;
+    width: 36px;
+    height: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.seat_0.seatname {
+    margin-top: 0px;
+    margin-left: 82px;}
+.seat_1.seatname {
+    margin-top: 18px;
+    margin-left: -72px;
+    text-align: right;}
+.seat_2.seatname {
+    margin-top: 32px;
+    margin-left: 82px;}
+.seat_3.seatname {
+    margin-top: 50px;
+    margin-left: -72px;
+    text-align: right;}
+.seat_4.seatname {
+    margin-top: 64px;
+    margin-left: 82px;}
+.seat_5.seatname {
+    margin-top: 82px;
+    margin-left: -72px;
+    text-align: right;}
+
+.seatname.with_menu, th.with_menu {
+    background-color: #A5ACD6;
+    border-color: #A5ACD6; }
+
+.seatname.overdue, th.overdue {
+    background-color: #FF7000; }
+
+.seatname.overdue:not(.with_menu) {
+    border-color: #FF7000; }
+
+/* One can arrange each seat individually */
+/*#seat_B46 + label {
+    transform: rotate(170deg);
+    margin-left: -55px;}*/

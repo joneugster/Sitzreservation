@@ -1,0 +1,222 @@
+body {
+    min-width: 1224px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#content {
+    position: relative;
+}
+
+#under_construction {
+    /*display: none;*/
+    border: 4px solid #c00000;
+    padding: 6px;
+    margin: 10px;
+  
+}
+
+
+#under_construction p{
+    color: #b00000;
+    font-size: 1.5em;
+    font-style: italic;
+    }
+
+
+
+/********* Top Nav ***********/
+
+#top_nav {
+    background-color: #721528;
+    /*background-color: #5C976B;*/
+}
+
+#top_nav li a {
+    /*background-color: #721528;*/
+    /* background-color: #51845E; */ 
+    color: #fff;
+}
+
+li#topnav_choice a {
+    /*background-color: #721528;*/
+    /* background-color: #51845E; */ 
+    color: #f4f4f4;
+}
+
+/******* Footer ********/
+footer {
+    background-color: #721528;
+    color: #f4f4f4;
+}
+
+footer li.contact {
+    /*background-color: #5C6A97;*/
+}
+
+footer li.credits {
+    /*background-color: #5C6A97;*/
+}
+
+/****** Buttons ********/
+button {
+    background-color: #721528;
+    /* background-color: #5C976B; */
+    color: #f0f0f0;
+    border-color: #606060;
+}
+
+
+button:hover {
+    background-color: #f0f0f0;
+    /* border-color: #5C976B;
+    color: #5C976B; */
+    border-color: #721528;
+    color: #721528;
+}
+
+button:active {
+    background-color: #e0e0e0;
+    /* color: #457150;
+    border-color: #457150; */
+    color: #56101E;
+    border-color: #56101E;
+   
+}
+
+button:disabled {
+    background-color: #f0f0f0;
+    border-color: #721528;
+    color: #721528;
+    cursor: auto;
+    }
+
+/***********************/
+
+#legend table{
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+
+#pricelist table {
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+#menulist table {
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+#contact_info {
+    border-color: #bbbbbb;
+}
+
+fieldset p.menues {
+    color: #dd0000;
+}
+
+input.address {
+    border-color: #b0b0b0;
+}
+
+/**** Normal Text *****/
+
+p.information {
+    color: #222255;
+}
+
+p.instruction {
+    color: #5050a0;
+}
+
+#no_gaps {
+    position: absolute;
+    right: 80px;
+    margin:  0px 0px 0px 0px;
+}
+
+p.info_successful {
+    color: #22aa22;
+}
+
+p.info_address {
+    color: #222255;
+}    
+
+p.info_date {
+    color: #66440B;
+}
+
+
+p.welcome {
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+p.welcome_info {
+    margin: 10px;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+    
+p.warning {
+    color: #cc0000;
+}
+
+p.warn_date {
+    margin: 40px 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #C93819;
+}
+
+#info_may_take_a_while {
+    color: #cc0000;
+}
+
+#info {
+    margin: 0px 30px;
+}
+
+h3.information {
+    margin: 10px 0px;
+    text-align: center;
+    width: 50%;
+    color: #222255;
+}
+
+    
+/******* Seats & Tables *******/
+  /*In this section we define only the position of objects, don't change anything!*/
+
+#content {
+    width: 840px; /*Don't change that! Otherwise the seats will not be in the correct place anymore*/
+    padding-left: 10px;
+    }
+
+#front1 {
+    margin-left: 164px; }
+#front2 {
+    margin-left: 0px; }
+#back1 {
+    margin-left: 164px; }
+#back2 {
+    margin-left: 492px; }
+
+
+/****** Fix *********/
+#layout_fix_noscript {
+    background-color: #eeeeee;
+}
+#layout_fix_noscript p {
+    color: #ff0000;}
+
+
+
+/********** Hide certain things ***********/
+/*#info_may_take_a_while, #submit_button {
+    display: none; }*/
+
+
+

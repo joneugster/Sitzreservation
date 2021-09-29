@@ -1,0 +1,61 @@
+    <fieldset id="contact_info">
+        <legend>${form_legend}</legend>
+        <p class="menues">${menu_selection}</p>
+    
+
+
+        <p><label class="address">${form_title}*:</label>
+        <select name="title" class="address" id="input_title">
+            <option value=""></option>
+            <option value="mr" ${user_title_mr}>${form_title_mr}</option>
+            <option value="ms" ${user_title_ms}>${form_title_ms}</option>
+        </select>
+        <p>
+            <label class="address">${form_firstname}*, ${form_lastname}*:</label>
+            <input type="text" name="firstname" value="${firstname}" class="address" id="input_firstname" required>
+            <input type="text" name="lastname" value="${lastname}" class="address" id="input_lastname" required>
+        </p>
+        <p>
+            <label class="address">${form_street}*, ${form_streetnr}:</label>
+            <input type="text" name="street" value="${street}" class="address" id="input_street" required>
+            <input type="text" name="street_nr" value="${street_nr}" class="address" id="input_street_nr">
+        </p>
+        <p>
+            <label class="address">${form_postcode}*, ${form_city}*:</label>
+            <input type="text" name="postcode" value="${postcode}" class="address" id="input_postcode" required>
+            <input type="text" name="city" value="${city}" class="address" id="input_city" required>
+        </p>
+        <p>
+            <label for="address_supplement_1" class="address">${form_address_compl}:</label>
+            <input type="text" name="address_supplement_1" value="${address_supplement_1}" class="address">
+        </p>
+        <p>
+            <label for="address_supplement_2" class="address">${form_address_compl}:</label>
+            <input type="text" name="address_supplement_2" value="${address_supplement_2}" class="address">
+        </p>
+        <p>
+            <label for="email" class="address">${form_email}*:</label>
+            <input type="text" name="email" value="${email}" class="address" required>
+        </p>
+        <p>
+            <label for="email_confirm" class="address">${form_email_conf}*:</label>
+            <input type="text" name="email_confirm" value="${email_confirm}" class="address" required>
+        </p>
+        <p>
+            <label for="phone" class="address">${form_phone}*:</label>
+            <input type="text" name="phone" value="${phone}" class="address" required>
+        </p>
+        <p>
+            <label for="comment" class="address">${form_comment}:</label>
+            <textarea name="comment" class="address">${comment}</textarea></p>
+        <p>
+            <input type="checkbox" name="conditions" value="agreed" class="checkbox"${send_email}>
+            <label for="conditions" class="checkbox">${form_conditions}</label>
+        <p>(*) ${form_required_fields}</p>
+    </fieldset>
+    <noscript><p class="warning">{}</p></noscript>
+
+    <button id="submit_button" name="submit" value="Submit" type="submit" onclick="showhide('info_may_take_a_while')">${button_submit}</button>
+    <p id="info_may_take_a_while" style="display:none;">${might_take_a_while}</p>
+     
+        

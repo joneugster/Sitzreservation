@@ -1,0 +1,356 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;}
+
+main {
+    min-height: 100%;
+    margin: 0 auto -2em;
+    position: relative;
+    }
+
+/***** Positions of images ****/
+
+
+
+/*********** Top Nav **********/
+#top_nav {
+    position: relative;
+}
+
+#top_nav ul{
+    height: 100%;
+    max-height: 8em;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#top_nav ul li {
+    height: 100%;
+    float: left;
+    max-width: 80%;
+}
+#top_nav li a {
+    height: 100%;
+    padding: .3em 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 1px 10px;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+}
+
+#top_nav a img {
+    max-height: 100px;
+    height: 90%;
+    position: absolute;
+    right: 15px;
+    top: 2px;
+}
+
+/*********** Footer ***********/
+.placeholder {
+    height: 2em;}
+footer {
+    position: relative;
+    height: 2em; }
+
+footer ul {
+    list-style-type: none;
+    height: 100%
+}
+
+footer li.contact {
+    /*position: absolute;*/
+    float: left;
+    padding-left: 1%;
+    padding-top: .4em;
+    text-align: center;
+    width: 79%;
+    overflow: hidden;
+    }
+
+footer li.credits {
+    position: absolute;
+    padding-top: .4em;
+    text-align: center;
+    right: 0px;
+    padding-right: 1%;
+    width: 19%;
+    overflow: hidden;
+    }
+
+/********* Buttons *************/
+button, .button {
+    padding: 4px;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: .9em;
+    margin: 3px 0px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#submit_button {
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+
+
+/********* Texts **************/
+
+h4 {
+    margin-bottom: .8em;
+}
+
+p.information {
+    margin: 10px 0px;
+    line-height: 140%;
+}
+
+p.instruction {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+p.info_successful {
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+
+p.info_address {
+    margin: 10px 0px;
+    font-style: italic;
+}    
+
+p.info_date {
+    border-radius: 20px;
+    margin: 10px 0px;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid;
+    line-height: 140%;
+}
+
+p.warning {
+    margin: 10px 0px;
+}
+
+
+.smaller {
+    transform: scale(0.8, 0.8);
+    transform-origin: top left;
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -ms-transform-origin: top left; /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -webkit-transform-origin: top left; /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -o-transform-origin: top left; /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
+    -moz-transform-origin: top left; /* Firefox */
+}
+
+
+/***** Legende, Price list *****/
+#pricelist {
+    position: fixed;
+    right: 30px;
+    top: 9em;
+}
+
+#menulist {
+    position: fixed;
+    right: 30px;
+    top: 15em;
+}
+
+
+#legend {
+    position: fixed;
+    right: 30px;
+    top: 25em;
+}
+
+@media screen and (max-height: 38em), screen and (max-width: 1140px) {
+    #pricelist {
+        position: absolute;
+        right: unset;
+        left: 850px;
+        top: 9em;
+    }
+    #menulist {
+        position: absolute;
+        right: unset;
+        left: 850px;
+        top: 15em;
+    }
+    #legend {
+        position: absolute;
+        right: unset;
+        left: 850px;
+        top: 25em;
+    }
+}
+
+#legend table{
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid;
+    width: 260px;
+}
+
+
+#pricelist table {
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid;
+    width: 260px;
+}
+
+#menulist table {
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid;
+    width: 260px;
+}
+
+
+/****** Rechnungs Kasten ******/
+#bill{
+    position: relative;
+    border: 2px solid;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+#bill button{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+
+/************ Form ************/
+fieldset {
+    border: 0px;
+    padding: 6px; }
+
+#contact_info {
+    border: 2px groove;
+    width: 800px; }
+
+legend {
+    margin-left: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;}
+
+fieldset p {
+    padding-top: 2px;
+    clear: both;}
+
+fieldset p.menues {
+    font-weight: bold;
+}
+
+fieldset p.menues i {
+    margin-left: 5px;
+}
+
+label.address {
+    text-align: left;
+    width: 12em;
+    max-width: 300px;
+    padding-left: 10px;
+    float: left;}
+
+label.checkbox {
+    text-align: left;
+    font-style: italic;
+    max-width: 500px;
+    padding-left: 10px;
+    float: left;}
+    
+input.address {
+    width: 20em; /*Width of a normal input field*/
+    height: 2em;
+    max-width:400px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid;
+    padding-left: 2px;
+    margin-right: 2px; }
+
+input.checkbox {
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px; }
+    
+    
+textarea.address {
+    width: 25em;
+    height: 30px;
+    min-height: 30px;
+    max-height: 300px;
+    min-width: 150px;
+    max-width: 400px;
+    float: left;
+    padding: 2px;}
+    
+/* more input fields*/
+#input_firstname {
+    width: 9em;
+    max-width:180px; }
+
+#input_lastname {
+    width: 10.5em;
+    max-width:210px; }
+
+#input_street, #input_city {
+    width: 16.5em;
+    max-width: 330px; }
+
+#input_street_nr, #input_postcode, #input_menus, #input_noscript_seats {
+    width: 3em;
+    max-width: 60px; }
+
+/******* Seats & Tables *******/
+  /*In this section we define only the position of objects, don't change anything!*/
+#front2 {
+    margin-bottom: 60px; }
+   
+select.image-picker {
+    display:none;}
+
+#layout_fix_noscript {
+    display: block;
+    margin-top: -60px;
+    height: 1084px;
+    max-width: 768px;
+}
+#layout_fix_noscript p {
+    margin: 5px;
+    max-width: 190px;
+}    
+/****** Cursor action ********/
+button:hover, .button:hover, .thumbnail, input[type="checkbox"], select {
+    cursor: pointer;
+}
+#top_nav a:link {
+    cursor: alias;
+}
+
+/********** Hide certain things ***********/
+#wrapper_reservation{
+    display: block;}
+
+#bill {
+    display: none; }
+

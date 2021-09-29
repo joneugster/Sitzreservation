@@ -1,0 +1,31 @@
+#!/bin/bash
+
+printf "sitzreservation..."
+MY_PATH="`dirname \"$0\"`"
+cd "$MY_PATH"
+
+touch log/sitzreservation.log             & printf "."
+chmod a+w log/sitzreservation.log         & printf "."
+touch log/.sitzreservation_DEBUG.log            & printf "."
+chmod a+w log/.sitzreservation_DEBUG.log        & printf "."
+
+touch data/data_Sa01.csv            & printf "."
+chmod a+w data/data_Sa01.csv        & printf "."
+touch data/data_Sa02.csv            & printf "."
+chmod a+w data/data_Sa02.csv        & printf "."
+touch data/data003.csv            & printf "."
+chmod a+w data/data003.csv        & printf "."
+
+touch data/numeration.txt           & printf "."
+chmod a+w data/numeration.txt       & printf "."
+
+printf " Done.\n"
+
+# rm .htaccess
+# cp _.htaccess .htaccess
+# cd data
+# rm .htaccess
+# cp _.htaccess .htaccess
+# cd ../ReservationModul
+# rm .htaccess
+# cp _.htaccess .htaccess

@@ -1,0 +1,319 @@
+body {
+    min-width: 1224px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#content {
+    position: relative;
+}
+
+#under_construction {
+    /*display: none;*/
+    border: 4px solid #c00000;
+    padding: 6px;
+    margin: 10px;
+  
+}
+
+
+#under_construction p{
+    color: #b00000;
+    font-size: 1.5em;
+    font-style: italic;
+    }
+
+
+#overdue_nr {
+    display: inline-block;
+    position: absolute;
+    margin-left: 22em;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px groove #bbbbbb;
+    bottom: 5px;
+    max-height: 300px;
+    overflow-y: scroll
+}
+
+/********* Top Nav ***********/
+
+#top_nav {
+    background-color: #324384;
+    /*background-color: #5C976B;*/
+}
+
+#top_nav li a {
+    /*background-color: #721528;*/
+    /* background-color: #51845E; */ 
+    color: #f0f0f0;
+}
+
+li#topnav_choice a {
+    /*background-color: #721528;*/
+    /* background-color: #51845E; */ 
+    color: #f4f4f4;
+}
+
+/******* Footer ********/
+footer {
+    background-color: #5C6A97;
+    color: #f4f4f4;
+}
+
+footer li.contact {
+    /*background-color: #5C6A97;*/
+}
+
+footer li.credits {
+    /*background-color: #5C6A97;*/
+}
+
+/****** Buttons ********/
+button, .button {
+    background-color: #f0f0f0;
+    /* background-color: #5C976B; */
+    color: #000000;
+    border-color: #000000;
+}
+
+button:hover, .button:hover {
+    background-color: #f6f6f6;
+    /* border-color: #5C976B;
+    color: #5C976B; */
+    border-color: #991C2B;
+    color: #991C2B;
+}
+
+button:active, .button:active {
+    background-color: #eeeeee;
+    /* color: #457150;
+    border-color: #457150; */
+    color: #861826;
+    border-color: #861826;
+   
+}
+
+button:disabled, .button:disabled {
+    background-color: #f6f6f6;
+    border-color: #991C2B;
+    color: #991C2B;
+    cursor: auto;
+    }
+
+/*********** Form ************/
+
+#legend table{
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+
+#pricelist table {
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+#menulist table {
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+#bill{
+    border-color: #bbbbbb;
+}
+
+#contact_info {
+    border-color: #bbbbbb;
+}
+
+fieldset p.menues {
+    color: #dd0000;
+}
+
+input.address {
+    border-color: #b0b0b0;
+}
+
+
+/*********** Form ************/
+
+#fieldset_action {
+    width: 15em;
+    margin: 20px 0px 6px;
+    border: 2px solid #bbbbbb;
+    border-radius: 4px;
+}
+
+#fieldset_action p {
+    margin: 6px;
+}
+#fieldset_action p label {
+    padding-left: 8px;
+}
+
+fieldset p.billdate {
+    font-weight:bold;
+    font-style: italic;
+    color: #000000;
+    margin-top: 50px;
+}
+
+fieldset  label.billdate {
+    margin-bottom: 40px;
+}
+
+
+/**** Normal Text *****/
+
+p.information {
+    color: #222255;
+}
+
+p.instruction {
+    color: #5050a0;
+}
+
+#no_gaps {
+    position: absolute;
+    right: 80px;
+    margin:  0px 0px 0px 0px;
+}
+
+p.info_successful {
+    color: #22aa22;
+}
+
+p.info_address {
+    color: #222255;
+}    
+
+p.info_date {
+    color: #66440B;
+}
+
+
+p.welcome {
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+p.welcome_info {
+    margin: 10px;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+    
+p.warning {
+    color: #cc0000;
+}
+
+p.warn_date {
+    margin: 40px 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #C93819;
+}
+
+#info_may_take_a_while {
+    color: #cc0000;
+}
+
+#info {
+    margin: 0px 30px;
+}
+
+h3.information {
+    margin: 10px 0px;
+    text-align: center;
+    width: 50%;
+    color: #222255;
+}
+
+    
+/******* Seats & Tables *******/
+  /*In this section we define only the position of objects, don't change anything!*/
+
+#content {
+    width: 840px; /*Don't change that! Otherwise the seats will not be in the correct place anymore*/
+    padding-left: 10px;
+    }
+
+#front1 {
+    margin-left: 164px; }
+#front2 {
+    margin-left: 0px; }
+#back1 {
+    margin-left: 164px; }
+#back2 {
+    margin-left: 492px; }
+
+
+/****** Fix *********/
+#layout_fix_noscript {
+    background-color: #eeeeee;
+}
+#layout_fix_noscript p {
+    color: #ff0000;}
+
+#room {
+    margin-left: 50px;
+}
+
+/******** Cursor action *********/
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.seatname.showinfo {
+    cursor: help;
+}
+.seatname:not(.showinfo) {
+    cursor: default;
+}
+
+
+#textarea_billnr {
+    width: 95%;
+    min-height: 20px;
+    height: 20px;
+}
+
+/********** Hide certain things ***********/
+/*#info_may_take_a_while, #submit_button {
+    display: none; }*/
+
+/**** Overwriting style.css ****/
+@media screen and (max-height: 38em), screen and (max-width: 1160px) {
+    #pricelist {
+        position: absolute;
+        right: unset;
+        left: 870px;
+        top: 9em;
+    }
+    #menulist {
+        position: absolute;
+        right: unset;
+        left: 870px;
+        top: 15em;
+    }
+    #legend {
+        position: absolute;
+        right: unset;
+        left: 870px;
+        top: 25em;
+    }
+}
+#entry {
+    top: 50px;
+}
+
+.info_eventkey{
+    border: 1px solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 650px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+

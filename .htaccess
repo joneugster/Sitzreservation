@@ -1,0 +1,7 @@
+<FilesMatch "optool.cgi|action.log|error.log">
+    AuthName "Operator Tool"
+    AuthType Basic
+    AuthUserFile "TODO"
+    require valid-user
+    ExpiresActive Off
+</FilesMatch>
